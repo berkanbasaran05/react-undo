@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import pic from './assets/ey.jpeg'
+
 
 function App() {
   const [points, setPoints] = useState([])
@@ -32,7 +32,7 @@ function App() {
   }
   
   return (
-    <div className='screen' style={{ backgroundImage: `url(${pic})`, backgroundSize: 'cover' }}> 
+    <div className='screen' style={{ backgroundImage: `url("src/assets/ey.jpeg")`, backgroundSize: 'cover' }}> 
    <iframe width="923" height="519" src="https://www.youtube.com/embed/6Cuki8mezDM" title="ZAKKUM // Seni Rastgele Sevmedim (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div className='screen' onClick={clickHandle} >
        <header className='header'>
